@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tipe Data String</title>
+</head>
+<body>
+    <script>
+        
+        // petik dua
+        document.writeln("Hidup Jokowii...!!");
+        
+        document.writeln("</br>");
+
+        // petik satu
+        document.writeln('Hidup Jokowii...!!');
+
+        document.writeln("</br>");
+
+        // Menambah String
+        document.writeln("Nama : " + "Joko " +  "Minto");
+
+        document.writeln("</br>");
+
+        // Menambah String 
+        document.writeln('Periode : ' + '10 ' + 'tahun');
+
+        document.writeln("</br>");
+
+        // Dengan writeln akan memberikan enter secara default dalam textarea
+        document.writeln("<textarea cols='100' rows='10'>");    
+        document.writeln("Joko " + "Minto");
+        document.writeln("Home " + "Joko");
+        document.writeln("2 " + "Periode ");
+        document.writeln("Ibu " + "Kota " + "Negara");
+        document.writeln("</textarea>");
+        // secara default 'writeln' dalam textarea akan memberikan enter
+
+        // Menggunakan write
+        document.writeln("<textarea cols='100' rows='10'>");
+        // Menggunakan \n untuk ENTER
+        document.write("Joko \n" + "Minto \n");
+        // Menggunakan \\ untuk \ dan \n untuk ENTER 
+        document.write("\\Home" + "\\Joko\n");
+        /* Menggunakan " untuk titik dua diatas dan \n untuk ENTER
+        Catatan, pada studi kasus dibawah, " ditambahkan dengan \ untuk menghindari bentrok error dengan tipe data stringnya.*/
+        document.write("\"2 " + "Periode\"\n");
+        /* Menggunakan ' untuk titik satu diatas dan \n untuk ENTER
+        Catatan, pada studi kasus dibawah, ' ditambahkan dengan \ untuk menghindari bentrok error dengan tipe data stringnya.*/
+        document.writeln('\'Ibu '+'Kota ' +'Negara\'\n');
+        document.write("</textarea>");
+        
+
+    </script>
+</body>
+</html>
