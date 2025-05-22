@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Variable Const</title>
+</head>
+<body>
+    <script>
+        const application = "Coretax";
+        const version = "1.0"
+
+        //apabila ingin merubahnya setelah line pembuatan pertama variable akan error
+        application = "coretax-icikiwir"; //ERROR
+
+        // apabila tetap memaksakan ingin merubah value dari application, maka akan terdapat pesan error dalam browser. Cara liatnya klik kanan --> inspect --> console. Maka akan terdapat pesan error sebagai berikut. "Uncaught TypeError: Assignment to constant variable. at variable-const.html:13:21Understand this error"
+    </script>
+</body>
+</html>
