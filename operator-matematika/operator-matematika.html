@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Operator Matematika</title>
+</head>
+<body>
+    <script>
+        
+        // PENERAPAN OPERATOR ARITMATIKA DALAM JAVA SCRIPT
+        document.writeln("PENERAPAN OPERATOR ARITMATIKA DALAM JAVA SCRIPT")
+
+        // operator penjumlahan
+        let result = 1 + 3; // hasil penjumlahan result = 4
+        document.writeln("<p>1 + 3 = " + result + "</p>")
+        let originalResult = result; // menyimpan variabel dari result yang merupakan hasil penjumlahan : 1 + 3 = 4
+        
+        // operator pengurangan
+        result = result -1; // hasil pengurangan result : 4 - 1 = 3
+        document.writeln("<p>" + originalResult + " -1 = " + result + "</p>")
+        originalResult = result; // menyimpan variabel dari result yang merupakan hasil pengurangan : 4 - 1 = 3
+        
+        // operator perkalian
+        result = result * 2; // hasil perkalian result : 3 * 2 = 6
+        document.writeln("<p>" + originalResult + " * 2 = " + result + "</p>")
+        originalResult = result; // menyimpan variabel dari result yang merupakan hasil perkalian : 3 * 2 = 6
+
+        // operator pembagian
+        result = result / 3 ; // hasil pembagian result : 6 / 3 = 2
+        document.writeln("<p>" + originalResult + " / 3 = " + result + "</p>")
+        originalResult = result; // menyimpan variabel dari result yang merupakan hasil pembagian : 6 / 3 = 2
+
+        // PENERAPAN OPERATOR AUGMENTED ASSIGNMENTS DALAM JAVA SCRIPT
+        document.writeln("PENERAPAN OPERATOR AUGMENTED ASSIGNMENTS DALAM JAVA SCRIPT")
+
+        // operator penjumlahan
+        let result1 = 1 + 3; // hasil penjumlahan result = 4
+        document.writeln("<p>1 + 3 = " + result1 + "</p>")
+        let originalResult1 = result1; // menyimpan variabel dari result yang merupakan hasil penjumlahan : 1 + 3 = 4
+        
+        // operator pengurangan
+        // penerapan operator augmented assignments (result -= 1)
+        result1 -= 1; // hasil pengurangan result : 4 - 1 = 3 
+        document.writeln("<p>" + originalResult1 + " -1 = " + result1 + "</p>")
+        originalResult1 = result1; // menyimpan variabel dari result yang merupakan hasil pengurangan : 4 - 1 = 3
+        
+        // operator perkalian
+        // penerapan operator augmented assignments (result *= 2)
+        result1 *= 2; // hasil perkalian result : 3 * 2 = 6
+        document.writeln("<p>" + originalResult1 + " * 2 = " + result1 + "</p>")
+        originalResult1 = result1; // menyimpan variabel dari result yang merupakan hasil perkalian : 3 * 2 = 6
+
+        // operator pembagian
+        // penerapan operator augmented assignments (result /= 3)
+        result1 /= 3 ; // hasil pembagian result : 6 / 3 = 2
+        document.writeln("<p>" + originalResult1 + " / 3 = " + result1 + "</p>")
+        originalResult1 = result1; // menyimpan variabel dari result yang merupakan hasil pembagian : 6 / 3 = 2
+
+        // PENERAPAN OPERATOR UNARY DALAM JAVA SCRIPT
+        document.writeln("PENERAPAN OPERATOR UNARY DALAM JAVA SCRIPT")
+
+        // operator untuk menandakan nilai positif
+        let result3 = +10; // mendefinisikan bilangan positif. result3 = 10
+        document.writeln("<p>" + result3 + "</p>")
+        
+        // operator untuk menurunkan 1 bilangan atau angka (decrement)
+        result3 --; // result3 : 10 - 1 = 9
+        document.writeln("<p>" + result3 + "</p>")
+
+        // operator untuk menaikkan 1 bilangan atau angka (increment)
+        result3 ++; // result3 : 9 + 1 = 10
+        document.writeln("<p>" + result3 + "</p>")
+        
+        // operator untuk menandakan nilai negatif
+        result3 = -result3; // result3 : 10  --> -10
+        document.writeln("<p>" + result3 + "</p>")
+
+
+    </script>
+</body>
+</html>

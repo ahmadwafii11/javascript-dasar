@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Operator Perbandingan</title>
+</head>
+<body>
+    <script>
+        
+        // PENERAPAN OPERATOR PERBANDINGAN
+        document.writeln("PENERAPAN OPERATOR PERBANDINGAN DALAM JAVA SCRIPT")
+
+        // operator sama dengan 
+        let result = 10 == "10"; // (jika operator ini dalam membandingkan nilai value tipe datanya berbeda, namun memiliki nilai value yang sama akan menghasilkan nilai True)
+        document.writeln("<p> Apakah 10 == '10'? : " + result + "</p>");
+        
+        // operator sama dengan dan sama tipe (datanya)
+        result = 100 === "100"; // (operator ini mewajibkan tipe data yang dibandingkan harus sama. Meskipun memiliki nilai valuenya sama, jika tipe data yang dibandingkan berbeda, maka akan menghasilkan nilai False)
+        document.writeln("<p> Apakah 100 === '100'? : " + result + "</p>");
+        
+        // operator lebih dari
+        result = 100 > 70; // (operator ini membandingkan nilai valuenya, tak peduli tipe data apa yang digunakan. Jika nilai value pertama yang dibandingkan lebih besar dari nilai value kedua, maka akan menghasilkan nilai True)
+        document.writeln("<p> Apakah 100 > 70? : " + result + "</p>");
+
+        // operator kurang dari
+        result = 100 < 700; // (operator ini membandingkan nilai valuenya, tak peduli tipe data apa yang digunakan. Jika nilai value pertama yang dibandingkan lebih kecil dari nilai value kedua, maka akan menghasilkan nilai True)
+        document.writeln("<p> Apakah 100 < 700? : " + result + "</p>");
+
+        // operator labih dari sama dengan
+        result = 100 >= 700;
+        document.writeln("<p> Apakah 100 > = 700? : " + result + "</p>");
+
+        // operator kurang dari sama dengan
+        result = 100 <= 700;
+        document.writeln("<p> Apakah 100 <= 700 : " + result + "</p>");
+
+        // operator tidak sama dengan
+        result = 100 != 700;
+        document.writeln("<p>Apakah 100 != 700? : " + result + "</p>");
+
+        // operator tidak sama dengan atau tidak sama tipe (datanya)
+        result = 100 !== "100";
+        document.writeln("<p>Apakah 100 !== '100'? : " + result + "</p>");
+
+
+    </script>
+</body>
+</html>

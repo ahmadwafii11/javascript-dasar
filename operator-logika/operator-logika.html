@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Operator Logika</title>
+</head>
+<body>
+    <script>
+
+        // PENERAPAN OPERATOR LOGIKA
+        document.writeln("PENERAPAN OPERATOR LOGIKA DALAM JAVA SCRIPT")
+
+        // Penerapan Operator Logika &&
+        document.writeln("</br>")
+        document.writeln("</br>")
+        document.writeln("PENERAPAN OPERATOR LOGIKA && (DAN) DALAM JAVA SCRIPT")
+
+        // Studi kasus Manchester United Musim 2024/25 apabila ingin bermain di Champions League
+
+        // Kondisi Klasemen dan Poin Manchester United
+        const rankManchesterUnited = 16;
+        const poinManchesterUnited = 39;
+
+        // Syarat apabila ingin bermain di Champions League
+        const lulusKlasemen = rankManchesterUnited < 6;
+        document.writeln("<p> Apakah Manchester United lulus syarat klasemen untuk bermain di kompetisi Champions League musim depan melalui liga? " + lulusKlasemen + "</p>") // cek apakah manchester united lulus klasemen untuk bermain di champions league musim depan
+        const lulusPoinLiga = poinManchesterUnited > 69;
+        document.writeln("<p> Apakah Manchester United lulus syarat poin untuk bermain di kompetisi Champions League musim depan melalui liga? " + lulusPoinLiga + "</p>") // cek apakah manchester united lulus poin untuk bermain di champions league musim depan
+
+        // Print hasil
+        const playChampionsLeague = lulusKlasemen && lulusPoinLiga;
+        document.writeln("<p>Apakah Manchester United akan bermain di kompetisi Champions League musim depan melalui liga? " + playChampionsLeague + "</p>");
+
+        // ------------------------------------------------------------------------------------------ //
+
+        // Penerapan Operator Logika ||
+        document.writeln("</br>");
+        document.writeln("PENERAPAN OPERATOR LOGIKA || (ATAU) DALAM JAVA SCRIPT");
+
+        // Studi kasus: akses ke konser musik
+        const punyaTiket = false;
+        const punyaUndanganVIP = true;
+
+        // Cek masing-masing kondisi
+        document.writeln("<p>Apakah pengunjung memiliki tiket konser? " + punyaTiket + "</p>");
+        document.writeln("<p>Apakah pengunjung memiliki undangan VIP? " + punyaUndanganVIP + "</p>");
+
+        // Pengunjung boleh masuk jika memiliki tiket atau undangan VIP
+        const bolehMasuk = punyaTiket || punyaUndanganVIP;
+        document.writeln("<p>Apakah pengunjung diperbolehkan masuk ke konser? " + bolehMasuk + "</p>");
+
+
+    </script>
+</body>
+</html>
