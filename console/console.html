@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Console</title>
+</head>
+<body>
+    <script>
+
+
+        // PENERAPAN CONSOLE
+        document.writeln("PENERAPAN CONSOLE DALAM JAVA SCRIPT")
+        document.writeln("</br>")
+        document.writeln("</br>")
+        document.writeln("Untuk menampilkan console, buka chrome --> klik kanan --> pilih inspect --> pilih console")
+        document.writeln("</br>")
+        document.writeln("Untuk menampilkan console debug, buka chrome --> klik kanan --> pilih inspect --> pilih console --> default levels --> verbose")
+
+        // Console debug === sama seperti console info untuk memberikan sebuah informasi sedetail mungkin
+        console.debug("Hello debug");
+        // Kenapa console debug tidak dimunculkan pada saat bersamaan dengan console lain? karena console debug berfungsi untuk memberikan informasi sedetail mungkin yang apabila kalau ditampilkan bersamaan dengan console lain secara default akan mengganggu dan mempengaruhi performa dari aplikasi kita
+
+        // Console Info
+        console.info("Hello World"); // output biasa
+
+        // Sama seperti console info
+        console.log("Hello World") 
+
+        // Console Warn
+        console.warn("Peringatan darurat!!") // output tingkatan berwarna kuning
+
+        // Console Error
+        console.error("Peringatan error!!") // output tingkatan berwarna merah
+
+        // Tingkatan console dari debug semakin ke bawah menuju console error
+
+
+    </script>
+</body>
+</html>
