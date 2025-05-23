@@ -8,3 +8,5 @@
 7) Operator Matematika (Operator Aritmatika, Operator Augmented Assignments, dan Operator Unary)
 8) Operator Perbandingan
 9) Operator Logika (Operator && (Dan), Operator || (Atau) dan Operator ! (Unary))
+10) Console (Console debug, Console info, Console log, Console warn dan Console error)
+11) String template (Expression di string template dan Multiline string)
