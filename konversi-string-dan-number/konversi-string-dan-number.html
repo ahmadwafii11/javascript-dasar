@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Konversi String dan Number</title>
+</head>
+<body>
+    <script>
+
+        // PENERAPAN CONSOLE
+        document.writeln("PENERAPAN KONVERSI STRING DAN NUMBER DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+        document.writeln("</br>");
+
+        // CONTOH CODE STUDI KASUS ARITMATIKA YANG TIDAK MELAKUKAN KONVERSI STRING DAN NUMBER
+        document.writeln("CONTOH CODE STUDI KASUS ARITMATIKA YANG TIDAK MELAKUKAN KONVERSI STRING DAN NUMBER");
+
+        const value1 = "30"; // membuat variable yang bertipe data string
+        const value2 = 40; // membuat variable yang bertipe data number
+        const sum = value1 + value2; // melalukan operasi aritmatika penjumlahan
+
+        document.writeln(`<p> 30 + 40 = ${sum}</p>`); // cetak
+        // hasil dari penjumlahan adalah 3040, bukan 70. Hal ini dikarenakan saat melakukan operasi aritmatika penjumlahan tidak melakukan konversi string dan number, sehingga sistem akan membaca operasi aritmatika bertipe data string semua.
+
+// --------------------------------------------------------------------------- //
+
+        // CONTOH CODE STUDI KASUS ARITMATIKA YANG MELAKUKAN KONVERSI STRING DAN NUMBER
+        document.writeln("CONTOH CODE STUDI KASUS ARITMATIKA YANG MELAKUKAN KONVERSI STRING DAN NUMBER : ");
+        document.writeln("</br>");
+        document.writeln("</br>");
+
+        document.writeln("1) CONTOH CODE STUDI KASUS ARITMATIKA YANG MELAKUKAN KONVERSI STRING KE NUMBER (BILANGAN BULAT) MENGGUNAKAN FUNCTION parseInt(string)");
+
+        // penerapan konversi string ke number (bilangan bulat) menggunakan function parseInt(string)
+        const value3 = parseInt("30"); // membuat variable yang bertipe data string
+        const value4 = 40; // membuat variable yang bertipe data number
+        const sum1 = value3 + value4; // melalukan operasi aritmatika penjumlahan
+
+        document.writeln(`<p> 30 + 40 = ${sum1}</p>`); // cetak
+        // hasil dari penjumlahan adalah 70. Hal ini dikarenakan saat melakukan operasi aritmatika penjumlahan telah melakukan konversi string ke dalam bentuk number (bilangan bulat), sehingga sistem akan membaca operasi aritmatika bertipe data number semua.
+
+// --------------------------------------------------------------------------- //
+
+        // CONTOH CODE STUDI KASUS ARITMATIKA LAIN YANG MELAKUKAN KONVERSI STRING KE NUMBER MAUPUN SEBALIKNYA
+
+        document.writeln("2) CONTOH CODE STUDI KASUS ARITMATIKA LAIN YANG MELAKUKAN KONVERSI STRING KE NUMBER MAUPUN SEBALIKNYA");
+
+        // penerapan konversi string ke number (bilangan bulat) menggunakan function parseInt(string)
+        // pada penerapan ini, angka yang bertipe data string apabila memiliki koma dibelakang (bilangan pecahan), maka akan dihiraukan. Semisal angka string = 2.3, maka output yang keluar hanya bilangan bulat angka 2 nya saja
+        document.writeln(`<p> Ubah string "2.3" ke bilangan bulat dengan parseInt(string) :  ${parseInt("2.3")} </p>`); // cetak
+
+        // penerapan konversi string ke number (bilangan pecahan) menggunakan function parseFloat(string)
+        // pada penerapan ini, angka yang bertipe data string apabila memiliki koma dibelakang (bilangan becahan), maka akan dihiraukan. Semisal angka string = 2.3, maka output yang keluar adalah bilangan pecahan 2.3.
+        document.writeln(`<p> Ubah string "2.3" ke bilangan pecahan dengan parseFloat(string) :  ${parseFloat("2.3")} </p>`); // cetak
+
+        // namun, apabila tidak terdapat koma dibelakang angka (bilangan bulat), maka output yang keluar adalah tetap bilangan bulat sesuai dengan string. Semisal, angka string = 2, maka output yang keluar adalah bilangan bulat 2.
+        document.writeln(`<p> Ubah string "2" ke bilangan pecahan dengan parseFloat(string) :  ${parseFloat("2")} </p>`); // cetak
+
+        // penerapan konversi string ke number (bilangan bulat atau pecahan) menggunakan function Number(string)
+        // sedangkan pada penerapan ini, angka number yang keluar terbilang fleksibel. apabila ingin mengubah data string dengan bilangan pecahan, maka output yang keluar adalah tetap menjadi bilangan pecahan. Semisal, angka string = 2.3, maka output yang keluar adalah bilangan pecahan 2.3
+        document.writeln(`<p> Ubah string "2.3" ke bilangan bulat atau pecahan dengan Number(string) :  ${Number("2.3")} </p>`); // cetak
+
+        // penerapan konversi number (bilangan bulat atau pecahan) ke string menggunakan function number.toString(number)
+        const a = 100;
+        const b = 400;
+        const total = a.toString() + b.toString()
+        
+        document.writeln(`<p> Penjumlahan number (bilangan bulat) 100 + 400 lalu dirubah ke bentuk string menggunakan function .toString(number) :  ${total} </p>`); // cetak
+
+// --------------------------------------------------------------------------- //
+         // CONTOH CODE STUDI KASUS NAN YANG MELAKUKAN KONVERSI KE STRING KE NUMBER
+         
+         document.writeln("3) CONTOH CODE STUDI KASUS NaN YANG MELAKUKAN KONVERSI STRING KE NUMBER");
+
+         // penerapan konversi string ke number (bilangan bulat) menggunakan function parseInt(string)
+         // pada penerapan ini, string yang nilai valuenya bukan angka, melakinkan berbentuk text, apabila dikonversi ke dalam bentuk number, maka hasil yang didapatkan adalah NaN (Not a Number)
+         document.writeln(`<p>Ubah string "False" ke bilangan bulat dengan parseInt(string) : ${parseInt("False")}</p>`); // output berupa NaN
+
+         // penerapan konversi string ke number (bilangan pecahan) menggunakan function parseFloat(string)
+        // pada penerapan ini, string yang nilai valuenya  angka dan text, apabila dikonversi ke dalam bentuk number, maka hasil yang didapatkan adalah tetap berbentuk number. Kenapa? karena sistem di dalam Java Script bisa di toleransi apabila kesalahan tersebut berada di belakang. Pada kasus ini, angka berada di depan '(2.3)'' lalu diikuti dengan teks 'text'. Maka, Java Script hanya mengambil angkanya saja, tanpa melibatkan teks yang berada di belakangnya.
+        document.writeln(`<p> Ubah string "2.3text" ke bilangan pecahan dengan parseFloat(string) :  ${parseFloat("2.3text")} </p>`); // output berupa 2.3
+
+        // penerapan konversi string ke number (bilangan bulat atau pecahan) menggunakan function Number(string)
+        // pada penerapan ini, string yang nilai valuenya  angka dan text, apabila dikonversi ke dalam bentuk number, maka hasil yang didapatkan adalah NaN. Kenapa? karena function 'Number' tidak mentolerir kesalahan sedikitpun pada string yang akan dilakukan konversi. Berbeda dengan parseInt maupun parseFloat yang masih mentolerir kesalahan string, meskipun kesalahan tersebut harus terletak di belakang angka.
+        document.writeln(`<p> Ubah string "2.3text" ke bilangan bulat atau pecahan dengan Number(string) :  ${Number("2.3text")} </p>`); // output berupa NaN
+
+         // penerapan kode operasi pada NaN
+        const c = Number("False");
+        const d = 400;
+        const totalNaN = c + d
+        
+        document.writeln(`<p> Penjumlahan string dan number "False" + 400 menggunakan function Number() :  ${totalNaN} </p>`); // output berupa NaN
+        // pada operasi NaN tersebut, dapat diambil kesimpulan bahwa apabila NaN dijumlahkan atau dilakukan operasi dengan bilangan lain, maka output nya adalah tetap NaN
+
+// --------------------------------------------------------------------------- //
+         // CONTOH CODE STUDI KASUS NAN YANG MELAKUKAN KONVERSI KE STRING KE NUMBER
+         
+         document.writeln("3) CONTOH CODE STUDI KASUS PENGECEKAN SEBUAH VARIABEL NaN ATAU BUKAN MENGGUNAKAN FUNCTION isNaN(variable/string)");
+
+         // membuat variable
+         const e = Number("False");
+         const f = 300;
+
+         // cek kondisi apakah e itu sebuah NaN atau bukan
+        document.writeln(`<p> Apakah variable e adalah NaN? :  ${isNaN(e)} </p>`); // output berupa True, karena variable e merupakan NaN
+
+         // cek kondisi apakah f itu sebuah NaN atau bukan
+        document.writeln(`<p> Apakah variable f adalah NaN? :  ${isNaN(f)} </p>`); // output berupa False, karena variable f merupakan bukan NaN
+    </script>
+    
+</body>
+</html>
