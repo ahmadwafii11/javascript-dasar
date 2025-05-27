@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tipe Data Array</title>
+</head>
+<body>
+    <script>
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN ARRAY
+        document.writeln("PENERAPAN ARRAY DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat sebuah array kosong
+        let arrayKosong = [] // belum terdapat datanya
+        let arrayKlub = ["Manchester United", "Liverpool", "Arsenal", "Chelsea", "Manchester City", "Tottenham Hotspurs"]; // terdapat data string didalamnya
+
+        // cetak
+        document.writeln("array kosong : ");
+        document.writeln(arrayKosong);
+        document.writeln("</br>");
+        document.writeln("array terdapat tipe data string : ");
+        document.writeln(arrayKlub);
+        document.writeln("</br>");
+        document.writeln("</br>");
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN MENAMBAHKAN DATA KE ARRAY DALAM JAVA SCRIPT
+        document.writeln("PENERAPAN MENAMBAHKAN DATA KE ARRAY DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+
+        const clubInggris = []; // membuat variable dengan const
+        clubInggris.push("Manchester United"); //push digunakan untuk menambahkan sebuah data ke dalam array
+        clubInggris.push("Manchester City");
+        clubInggris.push("Arsenal", "Chelsea", "Liverpool", "Tottenham Hotspurs");
+
+        // cetak
+        document.writeln("Klub Big Six Premier League : ");
+        document.writeln(clubInggris);
+        document.writeln("</br>");
+        document.writeln("</br>");
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubInggris);
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN OPERASI PADA ARRAY DALAM JAVA SCRIPT
+        document.writeln("PENERAPAN OPERASI PADA ARRAY DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+
+        const clubItalia = [];
+        clubItalia.push("Juventus", "Milan", "Inter", "Napoli");
+
+        // cetak
+        document.writeln("Klub SerieA : ");
+        document.writeln(clubItalia);
+        document.writeln("</br>");
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubItalia);
+
+        // Operasi melihat panjang array pada array clubItalia
+        document.writeln("1) Operasi melihat panjang array pada array clubItalia menggunakan function array.length");
+        document.writeln("</br>");
+        document.writeln("Panjang Array Klub SerieA : ");
+        document.writeln(clubItalia.length);
+        document.writeln("</br>");
+
+        // Operasi menambahkan data pada array clubItalia
+        clubItalia.push("Fiorentina", "Bologna", "Venezuela", "Como", "Lazio", "AS Roma", "Empoli", "Monza");
+        document.writeln("2) Operasi menambahkan data pada array clubItalia menggunakan function array.push(value)");
+        document.writeln("</br>");
+        document.writeln("Array Klub SerieA setelah ditambahkan data baru : ");
+        document.writeln(clubItalia);
+        document.writeln("</br>");
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubItalia);
+
+        // Operasi melihat data pada array clubItalia melalui sebuah index
+        document.writeln("3) Operasi melihat data pada array clubItalia melalui sebuah index menggunakan function array[index]");
+        document.writeln("</br>");
+        document.writeln("Array Klub SerieA pada index 10 : ");
+        document.writeln(clubItalia[10]);
+        document.writeln("</br>");
+        document.writeln("Array Klub SerieA pada index 5 : ");
+        document.writeln(clubItalia[5]);
+        document.writeln("</br>");
+        document.writeln("Array Klub SerieA pada index 3 : ");
+        document.writeln(clubItalia[3]);
+        document.writeln("</br>");
+
+        // melihat data pada array melalui sebuah index mengunakan console
+        console.info(clubItalia[10]);
+        console.info(clubItalia[5]);
+        console.info(clubItalia[3]);
+
+        // Operasi mengganti data pada array clubItalia melalui sebuah index
+        document.writeln("4) Operasi mengganti data pada array clubItalia melalui sebuah index menggunakan function array[index] = value");
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 6 : ");
+        document.writeln(clubItalia[6] = "Sassuolo");
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 10 : ");
+        document.writeln(clubItalia[10] = "Pisa");
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 11 : ");
+        document.writeln(clubItalia[11] = "Spezia");
+        document.writeln("</br>");
+        document.writeln("Array pada clubItalia setelah mengalami pergantian data melalui sebuah index : ");
+        document.writeln(clubItalia);
+        document.writeln("</br>");
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubItalia);
+
+        // Operasi menghapus data pada array clubItalia melalui sebuah index
+        document.writeln("5) Operasi menghapus data pada array clubItalia melalui sebuah index menggunakan function delete array[index]");
+        document.writeln("</br>");
+        document.writeln("Menghapus data dalam array clubItalia pada index 6 : ");
+        document.writeln(delete clubItalia[6]);
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 10 : ");
+        document.writeln(delete clubItalia[10]);
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 11 : ");
+        document.writeln(delete clubItalia[11]);
+        document.writeln("</br>");
+        document.writeln("Array pada clubItalia setelah mengalami pergantian data melalui sebuah index : ");
+        document.writeln(clubItalia);
+        document.writeln("</br>");
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubItalia);
+
+        // index pada data yang dihapus hilang, namun, index dapat digunakan kembali dengan cara merubah data di index yang dihapus.
+        // contoh penerapan
+        document.writeln("6) Operasi mengganti data pada array clubItalia melalui sebuah index yang telah dihapus sebelumnya menggunakan function array[index] = value");
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 6 : ");
+        document.writeln(clubItalia[6] = "Pisa");
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 10 : ");
+        document.writeln(clubItalia[10] = "Spezia");
+        document.writeln("</br>");
+        document.writeln("Mengganti data dalam array clubItalia pada index 11 : ");
+        document.writeln(clubItalia[11] = "Sassuolo");
+        document.writeln("</br>");
+        document.writeln("Array pada clubItalia setelah mengalami pergantian data melalui sebuah index : ");
+        document.writeln(clubItalia);
+        document.writeln("</br>");
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubItalia);
+
+</script>
+</body>
+</html>
