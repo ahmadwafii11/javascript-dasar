@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>If Expression</title>
+</head>
+<body>
+    <script>
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN IF - ELSE EXPRESSION
+        document.writeln("1) PENERAPAN IF - ELSE EXPRESSION DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat variable
+        const klasemenEPL = 16;
+
+        // cetak 
+        document.writeln("<p>Klasemen Antum:</p>");
+        document.writeln(klasemenEPL);
+
+        // if - else condition
+        if (klasemenEPL < 5){
+            document.writeln("<p>Anda lolos kompetisi Champions League </p>"); // Akan dieksekusi jika kondisi if bernilai 'True'
+        } else {
+            document.writeln("<p>Anda gagal lolos kompetisi Champions League </p>"); // Akan dieksekusi jika kondisi if bernilai 'False'
+        };
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN ELSE IF EXPRESSION
+        document.writeln("2) PENERAPAN ELSE - IF EXPRESSION DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat variable
+        const klasemenPremierLeague = 8;
+
+        // cetak 
+        document.writeln("<p>Klasemen Antum:</p>");
+        document.writeln(klasemenPremierLeague);
+
+        // else if condition
+        if (klasemenPremierLeague <= 5){
+            document.writeln("<p>Anda lolos kompetisi Champions League </p>"); // Akan dieksekusi jika kondisi if bernilai 'True'
+        } else if (klasemenPremierLeague <= 7){
+            document.writeln("<p>Anda lolos kompetisi Europe League </p>"); // Akan dieksekusi jika kondisi if bernilai 'True'
+        } else if (klasemenPremierLeague <= 8){
+            document.writeln("<p>Anda lolos kompetisi Conference League </p>"); // Akan dieksekusi jika kondisi if bernilai 'True'
+        } else {
+            document.writeln("<p>Anda gagal lolos kompetisi Eropa </p>"); // Akan dieksekusi jika kondisi if bernilai 'False'
+        };
+
+    </script>
+</body>
+</html>
