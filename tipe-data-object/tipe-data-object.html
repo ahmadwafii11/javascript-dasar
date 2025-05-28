@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Tipe Data Object</title>
+</head>
+<body>
+    <script>
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN TIPE DATA OBJECT
+        document.writeln("PENERAPAN TIPE DATA OBJECT DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat sebuah object kosong
+        const objectKosong = {}; // belum terdapat datanya
+        // yang membedakan dengan array kosong adalah tanda {} pada object, sedangkan pada array menggunakan [].
+
+// Melakukan operasi pada object kosong
+        // Untuk melakukan operasi pada object, kurang lebih sama dengan operasi pada array
+        const clubInggris = {};
+
+        // melakukan operasi penambahan atau mengubah object
+        clubInggris["Name"] = "Manchester United";
+        clubInggris["Lokasi"] = "Manchester, England";
+        clubInggris["Stadion"] = "Old Trafford";
+        clubInggris["Manajer"] = "Ruben Amorim";
+        clubInggris["Captain"] = "Bruno Fernandes";
+
+        // cetak
+        document.writeln("Klub Manchester United Detail : ");
+        document.writeln(clubInggris);
+        document.writeln("</br>");
+        document.writeln("</br>");
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubInggris);
+
+        // melakukan operasi delete pada object
+        delete clubInggris["Lokasi"];
+
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubInggris);
+
+        // melakukan operasi pembuatan object beserta valuenya
+        const clubMU = {
+            name: "Manchester United",
+            location: "Manchester, England",
+            stadion: "Old Trafford",
+            'manajer team': "Ruben Amorim",
+            'captain team': "Bruno Fernandes"
+        };
+        
+        // cetak dalam bentuk table menggunakan console
+        console.table(clubMU);
+
+        // melakukan operasi akses properti object
+        clubMU1 = {
+            name: "Manchester United",
+            location: "Manchester, England",
+            stadion: "Old Trafford",
+            'manajer team': "Ruben Amorim",
+            'captain team': "Bruno Fernandes"
+        };
+
+        // akses properti
+        console.info(`name: ${clubMU1.name}`);
+        console.info(`location: ${clubMU1.location}`);
+        console.info(`manajer team: ${clubMU1["manajer team"]}`);
+
+    </script>
+</body>
+</html> 
