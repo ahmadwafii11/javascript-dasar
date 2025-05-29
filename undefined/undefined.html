@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Undefined</title>
+</head>
+<body>
+    <script>
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN UNDEFINED DALAM SEBUAH VARIABLE
+        document.writeln("1) PENERAPAN UNDEFINED DALAM SEBUAH VARIABLE PADA JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat sebuah variable
+        var club; // disini, variable club belum memiliki satu data apapun. maka, variable ini bisa disebut sebagai undefined.
+        document.writeln("Isi dari variable club : ");
+        document.writeln(club);
+        document.writeln("</br>");
+
+        // cek menggunakan kondisi if expression
+        if (club === undefined){
+            document.writeln("variable club merupakan undefined"); // cetak
+        } else {
+            document.writeln("variable club merupakan defined"); // cetak
+        }
+        
+        document.writeln("</br>");
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN UNDEFINED DALAM AKSES DATA MELALUI INDEX, NAMUN DATA TERSEBUT TIDAK DITEMUKAN
+        document.writeln("2) PENERAPAN UNDEFINED DALAM AKSES DATA MELALUI INDEX, NAMUN DATA TERSEBUT TIDAK DITEMUKAN PADA JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat sebuah variable
+        let clubInggris = ["Manchester United", "Manchester City", "Brighton", "Liverpool", "Chelsea"]; // disini, variable club Inggris telah memiliki data. maka, variable ini bisa disebut sebagai defined.
+        document.writeln("Isi dari variable club : ");
+        document.writeln(clubInggris);
+        document.writeln("</br>");
+
+        // cek menggunakan kondisi if expression
+        if (clubInggris[7] === undefined){
+            document.writeln("index tersebut tidak ditemukan data (undefined)"); // cetak
+        } else {
+            document.writeln("index tersebut ditemukan data (defined)"); // cetak
+        }
+
+        document.writeln("</br>");
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN UNDEFINED DALAM TIPE DATA OBJECT
+        document.writeln("3) PENERAPAN UNDEFINED DALAM TIPE DATA OBJECT PADA JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat sebuah variable
+        let clubItalia = {}; // disini, variable club Italia dengan tipe data object tidak memiliki data. maka, variable ini bisa disebut sebagai defined.
+        document.writeln("Isi dari variable club : ");
+        document.writeln(clubItalia);
+        document.writeln("</br>");
+
+        // cek menggunakan kondisi if expression
+        if (clubItalia.name === undefined){
+            document.writeln("properti name pada object clubItalia tidak ditemukan (undefined)"); // cetak
+        } else {
+            document.writeln("properti name pada object clubItalia ditemukan (defined)"); // cetak
+        }
+    </script>
+</body>
+</html>

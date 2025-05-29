@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Switch Expression</title>
+</head>
+<body>
+    <script>
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN SWITCH STATEMENT
+        document.writeln("PENERAPAN SWITCH STATEMENT PADA JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat variable
+        const nilai = "E";
+
+        // cetak
+        document.writeln("Nilai antum : ");
+        document.writeln(nilai);
+        document.writeln("</br>")
+
+        // penerapan switch statement
+        switch (nilai) {
+            case "A":
+                document.writeln("Anda lulus dengan nilai sempurna");
+                break; // untuk menghentikan eksekusi apabila case A terpenuhi
+            case "B":
+            case "C":
+                document.writeln("Anda lulus");
+                break; // untuk menghentikan eksekusi apabila case B dan C terpenuhi
+            case "D":
+                document.writeln("Maaf, anda mengulang");
+                break;
+            default: // default disini sama seperti else pada if - else expression
+                document.writeln("Anda sebaiknya muhasabah diri");
+                break; // pada default, break bisa ditambahkan atau tidak. kenapa? karena fungsi break disini adalah menghentikan eksekusi dari masing-masing tiap case agar tidak lanjut ke case selanjutnya. Sedangkan, pada default disini terlihat bahwa tidak ada lagi case pada posisi dibawahnya
+        }
+
+    </script>
+</body>
+</html>

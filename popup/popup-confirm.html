@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Popup Confirm</title>
+</head>
+<body>
+    <script>
+
+// ---------------------------------------------------------------------------------------------------- //
+
+        // PENERAPAN POPUP (Confirm)
+        document.writeln("3) PENERAPAN POPUP CONFIRM DALAM JAVA SCRIPT");
+        document.writeln("</br>");
+
+        // membuat variable dan popup confirm
+        const club = confirm("Apa Antum yakin akan mendukung klub favorit Antum selama mungkin?");
+
+        // membuat kondisi if jika ya
+        if (club){
+            // membuat variable dan popup prompt
+            const club1 = prompt("Apa klub favorit Antum?");
+
+            // membuat popup alert. ini digunakan untuk menampilkan output dari prompt yang telah diisi oleh pengguna browser
+            alert(`Klub favorit Antum adalah ${club1}`);
+        } else {
+            // membuat alert untuk output jika kondisi if tidak
+            alert("Antum Karbit!!");
+        }
+
+        
+
+    </script>
+</body>
+</html>
